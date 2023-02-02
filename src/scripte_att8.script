@@ -1,0 +1,23 @@
+﻿create database if not exists dbproduits1; 
+
+use dbproduits1; 
+
+create table if not exists PRODUIT
+(
+	code int primary key auto_increment,
+	libelle varchar(40),
+    famille varchar(40),
+	prixAchat decimal(10,2),
+	prixVente decimal(10,2) 
+);
+insert into PRODUIT values (null,'Cuisinière',Epicerie,1500.90,70.89);
+insert into PRODUIT values (null,'Cuisinière',Epicerie,1509.89,90.87);
+insert into PRODUIT values (null,'Cuisinière',Epicerie,2657.99,70.9);
+insert into PRODUIT values (null,'Four micro-ondes',Epicerie,1500,70);
+insert into PRODUIT values (null,'Four à vapeur',Epicerie,1500,70);
+insert into PRODUIT values (null,'Cuisinière à gaz',Epicerie,1500,70);
+insert into PRODUIT values (null,'Lave-vaisselle',Epicerie,1500,70);
+insert into PRODUIT values (null,'Raisin',Textile,1500,70);
+insert into PRODUIT values (null,'Pomme',Textile,4565,70);
+insert into PRODUIT values (null,'Abricot',Textile,546,70);
+insert into PRODUIT values (null,'Orange',Textile,4657,70);
